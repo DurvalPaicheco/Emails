@@ -49,6 +49,8 @@ class EmailController extends Controller
 
             $email->send();
         }
+        
+        return response()->json(["success" => "Emails enviado com sucesso!"]);
     }
 
     public function new(Request $request){
